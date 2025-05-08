@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site SI 11P2</title>
+
+  <!-- Bootstrap CSS (local) -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Bootstrap Icons (local) -->
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="imagens/logo.png" alt="Bootstrap" width="80" height="70">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Página Inicial</a></li>
+            <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem Somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#produtos">Sobre o curso</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contactos">Contactos</a></li>
+          </ul>
+
+      
+    </div>
+  </div>
+</nav>
+
+<!-- Conteúdo principal -->
+<main class="container my-5">
+  <h1>Curso Técnico de Informática - Sistemas</h1>
+  <p>Um dos cursos mais procurados pelos jovens para ingressar no mundo da Informática</p>
+  <div class="text-center">
+    <img src="imagens/banner2.png" alt="Informática" class="rounded" width="1100" height="120">
+    <span class="border"></span>
+  </div>
+  <!-- Área de conteúdo adicional -->
+
+   <!-- Seção Página Inicial -->
+<section id="inicio" class="container my-5">
+    <div class="p-4 caixa-hover-transition border rounded shadow-sm">
+      <h2>O que fazemos?</h2>
+      <p>
+        Os alunos do curso profissional de Técnico de Sistemas desenvolvem competências na área das Tecnologias da Informação, com especial enfoque na instalação, configuração e manutenção de sistemas informáticos. Ao longo do curso, aprendem a montar e reparar computadores, instalar sistemas operativos, configurar redes locais (LAN) e prestar apoio técnico a utilizadores.
+      </p>
+      <p>
+        Além disso, os alunos adquirem conhecimentos sobre segurança informática, virtualização, servidores, e gestão de bases de dados, preparando-se para trabalhar em ambientes empresariais que dependem de infraestruturas tecnológicas para o seu funcionamento diário.
+      </p>
+      <p>
+        Este curso combina formação teórica com prática em contexto de trabalho (estágio), o que permite aos alunos ganhar experiência real no sector e sair do curso aptos para ingressar no mercado de trabalho ou prosseguir estudos na área das Tecnologias da Informação.
+      </p>
+    </div>
+  </section>
+
+  <!-- CSS da Seção Página Incial -->
+
+  <style>
+    .caixa-hover-transition {
+      background-color: #ffffff;  /* Fundo branco inicialmente */
+      color: #000000;             /* Texto preto inicialmente */
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+  
+    .caixa-hover-transition:hover {
+      background-color: #302d2d; /* Cinzento escuro ao passar o rato */
+      color: white;
+    }
+  
+    .caixa-hover-transition:hover h2,
+    .caixa-hover-transition:hover p {
+      color: white;
+    }
+  </style>
+  
+  <!-- Seção Quem Somos -->
+<section id="quem-somos" class="container my-5">
+  <div class="p-4 caixa-hover-transition border rounded shadow-sm ">
+    <h2>Quem Somos?</h2>
+    <p>
+      Este site foi desenvolvido por Nuno Loureiro e Nicolas Cantarino, alunos do 11.º ano da turma P2 do curso profissional de Técnico de Informática – Sistemas.
+    </p>
+    <p>
+      Ao longo do seu percurso no curso, ambos têm vindo a adquirir e a aplicar conhecimentos na área do desenvolvimento web, tendo criado este site como parte de um projeto prático que reflete as competências técnicas e criativas que estão a desenvolver. O Nuno e o Nicolas empenharam-se em planear, estruturar e programar o site, aplicando boas práticas de design e funcionalidade para proporcionar uma experiência simples, informativa e eficaz aos utilizadores.
+    </p>
+    <p>
+      Este tipo de projecto permite aos alunos consolidar aprendizagens e preparar-se para desafios reais no mundo profissional das Tecnologias da Informação.
+    </p>
+  </div>
+</section>
+
+<!-- CSS da Seção Quem Somos -->
+<style>
+  .caixa-hover-transition {
+    background-color: #ffffff;  /* Fundo branco inicialmente */
+    color: #000000;             /* Texto preto inicialmente */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .caixa-hover-transition:hover {
+    background-color: #302d2d; /* Cinzento escuro ao passar o rato */
+    color: white;
+  }
+
+  .caixa-hover-transition:hover h2,
+  .caixa-hover-transition:hover p {
+    color: white;
+  }
+</style>
+
+  
+  <!-- Seção Produtos -->
+  <section id="produtos" class="container my-5">
+    <div class="p-4 caixa-hover-transition border rounded shadow-sm">
+    <h2>Sobre o Curso</h2>
+    
+    <p class="d-inline-flex flex-wrap gap-2">
+      <!-- Botão 1: Condições de Acesso -->
+      <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseAcesso" role="button" aria-expanded="false" aria-controls="collapseAcesso">
+        Condições de Acesso
+      </a>
+  
+      <!-- Botão 2: Certificado -->
+      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCertificado" aria-expanded="false" aria-controls="collapseCertificado">
+        Certificado
+      </button>
+  
+      <!-- Botão 3: Saídas Profissionais -->
+      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSaidas" aria-expanded="false" aria-controls="collapseSaidas">
+        Saídas Profissionais
+      </button>
+  
+      <!-- Botão 4: Plano Curricular -->
+      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlano" aria-expanded="false" aria-controls="collapsePlano">
+        Plano Curricular
+      </button>
+    </p>
+  
+    <!-- Conteúdo: Condições de Acesso -->
+    <div class="collapse mt-3" id="collapseAcesso">
+      <div class="p-4 card card-body" style= "background-color: #302d2d;">
+        <p>Ter terminado o 9.º ano;</p>
+        <p>Não ter concluído o ensino secundário;</p>
+        <p>Não ter mais de 20 anos;</p>
+      </div>
+    </div>
+  
+    <!-- Conteúdo: Certificado -->
+    <div class="collapse mt-3" id="collapseCertificado">
+      <div class="p-4 card card-body" style= "background-color: #302d2d;">
+        <p>Diploma equivalente ao Ensino Secundário;</p>
+        <p>Acesso ao Ensino Superior;</p>
+        <p>Integração no mundo de trabalho (diploma nível 4);</p>
+        <p>Permite o ingresso nos Cursos de Especialização Tecnológica (nível 5);</p>
+      </div>
+    </div>
+  
+    <!-- Conteúdo: Saídas Profissionais -->
+    <div class="collapse mt-3" id="collapseSaidas">
+      <div class="p-4 card card-body" style= "background-color: #302d2d;">
+        <p>Técnico de informática;</p>
+        <p>Administrador de redes;</p>
+        <p>Assistente de suporte técnico (helpdesk);</p>
+        <p>Instalador e configurador de sistemas;</p>
+        <p>Colaboração em equipas de desenvolvimento e manutenção de infraestruturas tecnológicas;</p>
+      </div>
+    </div>
+  
+    <!-- Conteúdo: Plano Curricular -->
+    <div class="collapse mt-3" id="collapsePlano">
+      <div class="p-4 card card-body" style= "background-color: #302d2d;">
+        <p>Formação Sociocultural (Português, Inglês, Tecnologias de informação e comunicação, Área de Integração, Educação física);</p>
+        <p>Formação Científica (Matemática, Física e Química);</p>
+        <p>Formação Técnica (Sistemas de Informação, Aplicações Informáticas, Redes de Comunicação, Programação);</p>
+        <p>Formação em Contexto de Trabalho (estágio);</p>
+        
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- CSS da Seção Produtos -->
+<style>
+  .caixa-hover-transition {
+    background-color: #ffffff;  /* Fundo branco inicialmente */
+    color: #000000;             /* Texto preto inicialmente */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .caixa-hover-transition:hover {
+    background-color: #302d2d; /* Cinzento escuro ao passar o rato */
+    color: white;
+  }
+
+  .caixa-hover-transition:hover h2,
+  .caixa-hover-transition:hover p {
+    color: white;
+  }
+</style>
+  <!-- Seção Fotos tiradas no curso -->
+  <section id="" class="container my-5">
+    <div class="p-4 caixa-hover-transition border rounded shadow-sm">
+      <h2>Fotos dos estudantes</h2>
+      <button id="verFotosBtn" class="btn btn-success my-3">Ver fotos</button>
+  
+      <div id="galeriaFotos" class="row g-3 d-none">
+        <!-- Exemplo de fotos -->
+        <div class="col-md-4">
+          <img src="imagens/nicolas.jpg" class="img-fluid rounded" alt="Foto 1">
+        </div>
+        <div class="col-md-4">
+          <img src="imagens/nicolas2.jpg" class="img-fluid rounded" alt="Foto 2">
+        </div>
+        <div class="col-md-4">
+          <img src="imagens/maltadoscabos.jpg" class="img-fluid rounded" alt="Foto 3">
+        </div>
+        <div class="col-md-4">
+          <img src="imagens/maltadoscabos2.jpg" class="img-fluid rounded" alt="Foto 4">
+        </div>
+        <div class="col-md-4">
+          <img src="imagens/profmarciano.jpg" class="img-fluid rounded" alt="Foto 5">
+        </div>
+        <div class="col-md-4">
+          <img src="imagens/joão.jpg" class="img-fluid rounded" alt="Foto 6">
+        </div>
+        
+        <!-- Adicione mais conforme necessário -->
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    document.getElementById('verFotosBtn').addEventListener('click', function () {
+      const galeria = document.getElementById('galeriaFotos');
+      galeria.classList.toggle('d-none');
+      this.textContent = galeria.classList.contains('d-none') ? 'Ver fotos' : 'Esconder fotos';
+    });
+  </script>
+
+ <!-- Seção Fotos tiradas na visita de estudo -->
+
+
+<section id="" class="container my-5">
+  <div class="p-4 caixa-hover-transition border rounded shadow-sm">
+    <h2>Fotos de Visitas de Estudo</h2>
+    <button id="verFotosBtn2" class="btn btn-success my-3">Ver fotos</button>
+
+    <div id="galeria2" class="row g-3 d-none">
+      <!-- Exemplo de fotos -->
+      <div class="col-md-4">
+        <img src="imagens/v2.jpg" class="img-fluid rounded" alt="Foto 7">
+      </div>
+      <div class="col-md-4">
+        <img src="imagens/v3.jpg" class="img-fluid rounded" alt="Foto 8">
+      </div>
+      <div class="col-md-4">
+        <img src="imagens/v4.jpg" class="img-fluid rounded" alt="Foto 9">
+      </div>
+      <div class="col-md-4">
+        <img src="imagens/v5.jpg" class="img-fluid rounded" alt="Foto 10">
+      </div>
+      <div class="col-md-4">
+        <img src="imagens/v6.jpg" class="img-fluid rounded" alt="Foto 11">
+      </div>
+      <div class="col-md-4">
+        <img src="imagens/Image (12).jpg" class="img-fluid rounded" alt="Foto 12">
+      </div>
+      
+      <!-- Adicione mais conforme necessário -->
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('verFotosBtn2').addEventListener('click', function () {
+    const galeria = document.getElementById('galeria2');
+    galeria.classList.toggle('d-none');
+    this.textContent = galeria.classList.contains('d-none') ? 'Ver fotos' : 'Esconder fotos';
+  });
+</script>
+  
+  
+  
+  <!-- Seção Contactos -->
+  <section id="contactos" class="container my-5">
+    <div class="p-4 caixa-hover-transition border rounded shadow-sm">
+    <h2>Contactos</h2>
+    <p>
+        Telefone: 232 418 330
+      </p>
+      <p>
+        Email: esviriato@esviriato.pt
+      </p>
+    </div>
+  </section>
+
+  <!-- CSS da Seção Contactos -->
+<style>
+  .caixa-hover-transition {
+    background-color: #ffffff;  /* Fundo branco inicialmente */
+    color: #000000;             /* Texto preto inicialmente */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .caixa-hover-transition:hover {
+    background-color: #302d2d; /* Cinzento escuro ao passar o rato */
+    color: white;
+  }
+
+  .caixa-hover-transition:hover h2,
+  .caixa-hover-transition:hover p {
+    color: white;
+  }
+</style>
+  
+</main>
+
+
+<!-- Rodapé -->
+<footer class="bg-light text-center text-lg-start border-top">
+  <div class="container p-4">
+
+    <div class="row">
+     
+      <!-- Redes Sociais -->
+      <div class="col-md-6 mb-4 text-center mx-auto">
+        <h5 class="text-uppercase mb-3">Siga-nos</h5>
+        <div class="d-flex justify-content-center gap-2">
+          <a href="https://www.facebook.com/people/Escola-Secundária-Viriato/100057798333819/" class="btn btn-outline-dark btn-sm">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://x.com/esviriato" class="btn btn-outline-dark btn-sm">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/es_viriato/" class="btn btn-outline-dark btn-sm">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+
+  </div>
+  <div class="text-center p-3 bg-secondary text-white">
+    Estudar e aprender programação <a href="https://esviriato.pt" class="text-white text-decoration-underline">aqui</a> é uma opção.
+  </div>  
+</footer>
+
+<!-- Botão Voltar ao Topo -->
+<button type="button" class="btn btn-success position-fixed bottom-0 end-0 m-4 rounded-circle"
+        style="width: 48px; height: 48px; display: none;" id="btn-top" aria-label="Voltar ao topo">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS (local) -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Script para funcionalidade do botão -->
+<script>
+  const btnTop = document.getElementById('btn-top');
+
+  // Mostrar botão quando a página for rolada para baixo
+  window.addEventListener('scroll', () => {
+    btnTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+
+  // Ir ao topo da página suavemente
+  btnTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
